@@ -7,7 +7,7 @@ const transition: Transition = {
     repeatType: "loop",
     ease: "easeInOut",
 }
-const trajectory = "M 100 350 Q 275 0 455 350"
+const trajectory = "M 150 200 Q 275 -50 405 200"
 export default function MotionPath() {
     
     return (

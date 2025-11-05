@@ -18,6 +18,18 @@ import quadBack6 from "./quad-back-6.png";
 import quadBack7 from "./quad-back-7.png";
 import quadBack8 from "./quad-back-8.png";
 
+// --- Portfolio images ---
+import quadFront2_1 from "./quad-front-2-1.png";
+import quadBack2_1 from "./quad-back-2-1.png";
+import quadFront2_2 from "./quad-front-2-2.png";
+import quadBack2_2 from "./quad-back-2-2.png";
+import quadFront2_3 from "./quad-front-2-3.png";
+import quadBack2_3 from "./quad-back-2-3.png";
+import quadFront2_4 from "./quad-front-2-4.png";
+import quadBack2_4 from "./quad-back-2-4.png";
+import quadFront2_5 from "./quad-front-2-5.png";
+import quadBack2_5 from "./quad-back-2-5.png";
+
 // Export individually grouped
 export const fronts = {
   quadFront1,
@@ -41,8 +53,27 @@ export const backs = {
   quadBack8,
 };
 
+// --- Portfolio groups ---
+export const frontsPortfolio = {
+  quadFront2_1,
+  quadFront2_2,
+  quadFront2_3,
+  quadFront2_4,
+  quadFront2_5,
+};
+
+export const backsPortfolio = {
+  quadBack2_1,
+  quadBack2_2,
+  quadBack2_3,
+  quadBack2_4,
+  quadBack2_5,
+};
+
 // Export all together (optional)
 export default {
   ...fronts,
   ...backs,
+  ...frontsPortfolio,
+  ...backsPortfolio,
 };

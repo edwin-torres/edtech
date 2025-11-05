@@ -15,12 +15,13 @@ import MotionPath from "./components/projects/Rocket";
 import Portfolio from "./components/Portfolio"; // ✅ new
 import ShowTangent from "./components/projects/ShowTangent";
 import Lorenz from "./components/projects/Lorenz";
+import PortfolioCards from "./components/projects/CardsPortfolio";
 
 
 // ✅ Layout wrapper that hides nav on specific routes
 function Layout({ children }) {
   const location = useLocation();
-  const hideNavOn = ["/cards", "/rocket", "/lorenz"]; // list of routes that should NOT show nav
+  const hideNavOn = ["/cards", "/rocket", "/lorenz", "/quadcards"]; // list of routes that should NOT show nav
   const showNav = !hideNavOn.includes(location.pathname);
 
   return (
@@ -77,10 +78,11 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} /> {/* ✅ new */}
-          <Route path="/cards" element={<QuadraticFlashcards />} />
+          <Route path="/cards" element={<PortfolioCards />} />
           <Route path="/rocket" element={<MotionPath />} />
           <Route path="/tangent" element={<ShowTangent />} />
            <Route path="/lorenz" element={<Lorenz />} />
+           <Route path="/quadcards" element={<PortfolioCards />} />
 
 
       {/* Using path="*"" means "match anything" */}

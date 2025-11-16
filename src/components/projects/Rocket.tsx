@@ -11,11 +11,14 @@ const trajectory = "M 150 200 Q 275 -50 405 200"
 export default function MotionPath() {
     
     return (
-        <div style={{ position: "relative" , background:"#ffffffff", 
+        <div style={{  
             
-          width: 600,
-          height:500,
-          margin: "0 auto",
+           position: "relative",
+    background: "#fff",
+    width: "600px",
+    height: "400px",   // <-- adjust to your desired embed window
+    margin: "0 auto",
+    overflow: "hidden" // <
         
         
         }}>
